@@ -1,5 +1,3 @@
-module.exports = {
-    testing: function() {
-        return 'omg'
-    }
+module.exports = function() {
+    return 'omg'
 }
