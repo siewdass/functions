@@ -1,3 +1,3 @@
-export default function Testing() {
+module.exports = function Testing() {
     return 'omg'
 }
