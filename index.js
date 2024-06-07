@@ -1,3 +1,3 @@
 module.exports = function() {
-    return 'omg'
+    return Math.floor(Math.random() * 10)
 }
