@@ -1,3 +1,5 @@
-module.exports = function Testing() {
-    return 'omg'
+module.exports = {
+    testing: function() {
+        return 'omg'
+    }
 }
