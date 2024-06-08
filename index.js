@@ -1,3 +1,3 @@
-export default function Test() {
-  return Math.floor( Math.random( ) * 11 )
+export default function a( ) {
+  return "dddd"
 }
