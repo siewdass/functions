@@ -1,0 +1,9 @@
+functions:
+  home:
+    name: home
+    type: frontend
+    path: '/'
+    handler: ./index.js
+    package:
+      - components
+      - jsx
