@@ -1,3 +1,3 @@
 export default function a( ) {
-  return "dddd"
+  return Math.floor(Math.random() * 10)
 }
