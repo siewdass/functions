@@ -1,4 +1,3 @@
 export default function Frontend( components ) {
-    //sddsdddd
-    return 5
+    return <>Hello</>
 }
