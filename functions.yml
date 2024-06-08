@@ -4,6 +4,6 @@ functions:
     type: frontend
     path: '/'
     handler: ./index.js
-    package:
+    packages:
       - components
       - jsx
