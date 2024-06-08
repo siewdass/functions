@@ -1,3 +1,3 @@
 export default function Frontend( components ) {
-    return <div>Hellood</div>
+    return <div>Helloo</div>
 }
