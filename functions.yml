@@ -1,9 +1,13 @@
 functions:
-  home:
-    name: home
+  app:
     type: frontend
     path: '/'
-    handler: ./index.js
+    handler: ./frontend.js
     packages:
       - components
-      - jsx
+  api:
+    type: backend
+    path: '/'
+    handler: ./backend.js
+    packages:
+      - database
