@@ -1,13 +1,13 @@
 functions:
-  app:
-    type: frontend
-    path: /
-    handler: /frontend.js
-    packages:
-      - components
-  api:
-    type: backend
-    path: /
-    handler: /backend.js
-    packages:
-      - database
+  frontend:
+    app:
+      path: /
+      handler: /frontend.js
+      packages:
+        - components
+  backend:
+    api:
+      path: /get
+      handler: /backend.js
+      packages:
+        - database
