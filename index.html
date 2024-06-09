@@ -3,6 +3,22 @@
     <head>
         <script src="http://woveer.ddns.net:3000/cdn.js?project=tester"></script>
     </head>
+    <script>
+        export function Frontend(components) {
+            return React.createElement(
+                "div",
+                null,
+                "Helloo"
+            );
+        };
+        window.functions = window.functions ?? []
+        window.functions.push( { path: '/', handler: Frontend } )
+
+
+    </script>
+    <script>
+        setTimeout( () => console.log(window.functions), 2000)
+    </script>
     <body>
         testesdsdd
     </body>
