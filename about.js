@@ -1,3 +1,3 @@
 export function about( components ) {
-    return <div>aboddut</div>
+    return <div>abdddut</div>
 }
