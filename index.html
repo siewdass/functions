@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+            window.functions = []
+        </script>
         <script src="http://woveer.ddns.net:3000/cdn.js?project=tester"></script>
     </head>
-
-    <script>
-        /*fetch('http://localhost:3000/menu')
-        .then(response => response.json())
-        .then(data => {
-            console.log(data)d
-        })*/
-
-        //setTimeout( () => {console.log(window.functions)}, 500)
-    </script>
     <body>
-        testerddddd
+        <div id="root"></div>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script>
+            setTimeout( () => {
+                const rootElement = document.getElementById("root");
+                const root =ReactDOM. createRoot(rootElement);
+                root.render(
+                    window.functions[ 0 ].handler()
+                )
+            }, 500)
+        </script>
     </body>
 </html>
