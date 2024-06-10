@@ -1,3 +1,3 @@
 export function Frontend( components ) {
-    return <div>Hellddddddod</div>
+    return <div>Helldddddddod</div>
 }
