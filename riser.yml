@@ -13,9 +13,9 @@ riser:
       packages:
         - components
   gateway:
-    api:
-      path: /get
-      handler: /backend.js
+    register:
+      path: /register
+      handler: /register.js
       packages:
         - database
       dependencies:
