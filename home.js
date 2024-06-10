@@ -1,3 +1,10 @@
 export function home( components ) {
-    return <div>Home</div>
+    const handler = () => {
+        console.log('sss')
+    }
+    return (
+        <div>
+            <button onClick={ handler } >Click</button>
+        </div>
+    )
 }
