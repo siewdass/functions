@@ -5,6 +5,8 @@ functions:
       handler: /frontend.js
       packages:
         - components
+        - navigation
+        - state
     home:
       path: /home
       handler: /home.js
