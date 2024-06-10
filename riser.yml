@@ -1,5 +1,5 @@
 riser:
-  views:
+  view:
     about:
       path: /
       handler: /about.js
@@ -12,7 +12,7 @@ riser:
       handler: /home.js
       packages:
         - components
-  gateways:
+  gateway:
     api:
       path: /get
       handler: /backend.js
