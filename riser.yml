@@ -1,14 +1,14 @@
 riser:
   view:
     about:
-      path: /
+      path: /about
       handler: /about.js
       packages:
         - components
         - navigation
         - state
     home:
-      path: /home
+      path: /
       handler: /home.js
       packages:
         - components
