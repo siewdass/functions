@@ -18,3 +18,5 @@ functions:
       handler: /backend.js
       packages:
         - database
+      dependencies:
+        - /something.js
