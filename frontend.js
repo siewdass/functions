@@ -1,5 +1,3 @@
 export function Frontend( components ) {
-    return <div>ds</div>
+    return <div>dds</div>
 }
-
-//s
