@@ -4,6 +4,7 @@ export function home( components ) {
     }
     return (
         <div>
+            <h3>Home</h3>
             <button onClick={ handler } >Click</button>
         </div>
     )
