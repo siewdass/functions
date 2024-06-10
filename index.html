@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-                
         <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/react-hook-form@7.51.5/dist/index.umd.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-router-dom@5.3.4/umd/react-router-dom.min.js"></script>
+        <script crossorigin src="https://cdn.jsdelivr.net/npm/react-hook-form@7.51.5/dist/index.umd.min.js"></script>
         <script>
             const exports = { config: {} }
         </script>
@@ -13,9 +13,17 @@
     <body>
         <div id="root"></div>
         <script>
-            const { useState } = React;
+            const { useState, createElement } = React
+            const { BrowserRouter, Route, Switch } = ReactRouterDOM
+
             const root = ReactDOM.createRoot( document.getElementById( "root" ) )
-            root.render( exports[ exports.config[ '/' ] ]() )
+            root.render( 
+                createElement(
+                    BrowserRouter, null, Object.keys( exports.config ).map( path => 
+                        createElement( Route, { path }, exports[ exports.config[ path ] ]() )
+                    )
+                )
+            )
         </script>
     </body>
 </html>
