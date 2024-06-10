@@ -1,3 +1,3 @@
-export function Home ( components ) {
+export function home( components ) {
     return <div>Home</div>
 }

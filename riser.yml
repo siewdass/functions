@@ -1,8 +1,8 @@
-functions:
-  frontend:
-    app:
+riser:
+  views:
+    about:
       path: /
-      handler: /frontend.js
+      handler: /about.js
       packages:
         - components
         - navigation
@@ -12,7 +12,7 @@ functions:
       handler: /home.js
       packages:
         - components
-  backend:
+  gateways:
     api:
       path: /get
       handler: /backend.js
