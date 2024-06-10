@@ -1,3 +1,3 @@
-export default function Frontend( components ) {
+function Frontend( components ) {
     return <div>Hellddddddsddddod</div>
 }
