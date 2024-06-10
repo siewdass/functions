@@ -1,3 +1,3 @@
-const Home = ( components ) => {
+function Home ( components ) {
     return <div>Home</div>
 }
