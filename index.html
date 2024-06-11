@@ -21,7 +21,7 @@
             root.render( 
                 createElement(
                     BrowserRouter, null, Object.keys( exports.config ).map( path => 
-                        createElement( Route, { path }, exports[ exports.config[ path ] ]( { useHistory: useHistory() } ) )
+                        createElement( Route, { path }, exports[ exports.config[ path ] ]( { useHistory: 1 } ) )
                     )
                 )
             )
