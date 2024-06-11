@@ -1,4 +1,4 @@
-export function home( param ) {
+export function home( { useHistory } ) {
     const handler = async () => {
         const response = await fetch( 'http://woveer.ddns.net:3000/api/testing', {
             method: 'POST',
@@ -11,7 +11,7 @@ export function home( param ) {
         <div>
             <h3>Home</h3>
             <button onClick={ handler }>Click</button>
-            <button onClick={ ( ) => console.log(param) }>GoTo</button>
+            <button onClick={ ( ) => useHistory( '/about') }>GoTo</button>
         </div>
     )
 }
