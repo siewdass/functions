@@ -5,7 +5,7 @@ export function home( components ) {
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify( { daa: 2 } )
 		} )
-        console.log( response.json( ) )
+        console.log( await response.json( ) )
     }
     return (
         <div>
