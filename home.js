@@ -1,6 +1,6 @@
 export function home( { useHistory } ) {
     const handler = async () => {
-        const response = await fetch( 'http://woveer.ddns.net:3000/api/testing', {
+        const response = await fetch( 'http://woveer.ddns.net:3000/api/tester/register', {
             method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify( { daa: 2 } )
