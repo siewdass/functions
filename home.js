@@ -1,4 +1,4 @@
-export function home( components ) {
+export function home( { useNavigate } ) {
     const handler = async () => {
         const response = await fetch( 'http://woveer.ddns.net:3000/api/testing', {
             method: 'POST',
@@ -10,7 +10,8 @@ export function home( components ) {
     return (
         <div>
             <h3>Home</h3>
-            <button onClick={ handler } >Click</button>
+            <button onClick={ handler }>Click</button>
+            <button onClick={ handler }>GoTo</button>
         </div>
     )
 }

@@ -15,13 +15,13 @@
         <script>
             // project title and icon
             const { useState, createElement } = React
-            const { BrowserRouter, Route, Switch } = ReactRouterDOM
+            const { BrowserRouter, Route, Switch, useNavigate } = ReactRouterDOM
 
             const root = ReactDOM.createRoot( document.getElementById( "root" ) )
             root.render( 
                 createElement(
                     BrowserRouter, null, Object.keys( exports.config ).map( path => 
-                        createElement( Route, { path }, exports[ exports.config[ path ] ]() )
+                        createElement( Route, { path }, exports[ exports.config[ path ] ]( { useNavigate: useNavigate() } ) )
                     )
                 )
             )
