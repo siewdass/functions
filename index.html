@@ -3,26 +3,29 @@
     <head>
         <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
         <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-        <script crossorigin src="https://unpkg.com/react-router-dom@5.3.4/umd/react-router-dom.min.js"></script>
+        <script crossorigin src="https://unpkg.com/react-router-dom@5.2.0/umd/react-router-dom.min.js"></script>
+        
         <script crossorigin src="https://cdn.jsdelivr.net/npm/react-hook-form@7.51.5/dist/index.umd.min.js"></script>
         <script src="http://woveer.ddns.net:3000/cdn.js?project=tester"></script>
     </head>
     <body>
         <div id="root"></div>
         <script>
-            // project title and icon
             const { useState, createElement } = React
             const { BrowserRouter, Route, Switch, useHistory } = ReactRouterDOM
 
             const root = ReactDOM.createRoot( document.getElementById( "root" ) )
             console.log( ReactRouterDOM )
+
             root.render( 
                 createElement(
                     BrowserRouter, null, Object.keys( exports.config ).map( path => 
-                        createElement( Route, { path }, exports[ exports.config[ path ] ]( { useHistory: 1 } ) )
+                        createElement( Route, { path }, exports[ exports.config[ path ] ]( { useHistory } ) )
                     )
                 )
             )
+            //const navigate = useHistory();
+            //navigate('/home')
         </script>
     </body>
 </html>
