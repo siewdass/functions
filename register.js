@@ -1,4 +1,4 @@
-export function register( database ) {
+export function register( { database } ) {
   
   return database
 }
