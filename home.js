@@ -11,7 +11,7 @@ export function home( { useHistory } ) {
         <div>
             <h3>Home</h3>
             <button onClick={ handler }>Click</button>
-            <button onClick={ ( ) => console.log( 'Buenas') }>GoTo</button>
+            <button onClick={ ( ) => console.log( 'Buenasx') }>GoTo</button>
         </div>
     )
 }
