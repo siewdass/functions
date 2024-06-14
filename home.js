@@ -1,4 +1,5 @@
-export function home( props ) {
+export function home( { useNavigate } ) {
+    const navigate = useNavigate()
     const handler = async () => {
         const response = await fetch( 'http://woveer.ddns.net:3000/api/tester/register', {
             method: 'POST',
@@ -7,12 +8,12 @@ export function home( props ) {
 		} )
         console.log( await response.json( ) )
     }
-    console.log(props)
+    
     return (
         <div>
             <h3>Home</h3>
             <button onClick={ handler }>Click</button>
-            <button onClick={ ( ) => console.log( 'Buenasxxxdx', useHistory ) }>GoTo</button>
+            <button onClick={ ( ) => navigate( '/' ) }>GoTo</button>
         </div>
     )
 }
