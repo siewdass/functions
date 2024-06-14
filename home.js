@@ -1,7 +1,7 @@
-export function home( { useNavigate, useRequest } ) {
+export function home( { useNavigate, useFetch } ) {
     const navigate = useNavigate()
     const handler = async () => {
-        const response = await useRequest('POST', 'http://woveer.ddns.net:3000/api/tester/register', { daa: 2 } )
+        const response = await useFetch('POST', 'http://woveer.ddns.net:3000/api/tester/register', { daa: 2 } )
         console.log( response )
     }
     
