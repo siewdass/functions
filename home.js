@@ -1,4 +1,4 @@
-export function home( { useHistory } ) {
+export function home( props ) {
     const handler = async () => {
         const response = await fetch( 'http://woveer.ddns.net:3000/api/tester/register', {
             method: 'POST',
@@ -7,6 +7,7 @@ export function home( { useHistory } ) {
 		} )
         console.log( await response.json( ) )
     }
+    console.log(props)
     return (
         <div>
             <h3>Home</h3>
