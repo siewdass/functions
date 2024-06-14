@@ -13,7 +13,7 @@ export function home( { useNavigate } ) {
         <div>
             <h3>Home</h3>
             <button onClick={ handler }>Click</button>
-            <button onClick={ ( ) => navigate( '/' ) }>GoTo</button>
+            <button onClick={ ( ) => navigate( '/about' ) }>GoTo</button>
         </div>
     )
 }

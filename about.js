@@ -1,4 +1,4 @@
 export function about( params ) {
     console.log(params)
-    return <div>About</div>
+    return <div onClick={ ( ) => navigate( '/about' ) }>About</div>
 }
