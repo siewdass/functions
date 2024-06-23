@@ -8,7 +8,7 @@ export function home( { useNavigate, useFetch } ) {
     return (
         <div>
             <h3>Home</h3>
-            <button onClick={ handler }>Click</button>
+            <button onClick={ handler }>Click me</button>
             <button onClick={ ( ) => navigate( '/about' ) }>GoTo</button>
         </div>
     )
