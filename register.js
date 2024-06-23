@@ -1,4 +1,4 @@
 export function register( { database } ) {
-  console.log(database('Beheart').find())
+  console.log(database)
   return ['asdasd',2]
 }
