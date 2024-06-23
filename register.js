@@ -1,6 +1,6 @@
 export function register( { database } ) {
     const collection = database.collection('Beheart');
-    const results = await collection.find(query).toArray();
+    const results = await collection.find({}).toArray();
   console.log(results)
 
   return ['asdasd',2]
