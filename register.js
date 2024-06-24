@@ -1,4 +1,5 @@
 export async function register( { database } ) {
-  const results = await database.collection('Beheart').find({}).toArray();
+  const collection = database.collection('Beheart');
+  const results = await collection.find({}).toArray();
   return await collection.find({}).toArray()
 }
